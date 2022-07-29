@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.css"],"names":[],"mappings":"AAAA,EACA,mBAAA,WAAA,WAAA,WAEA,iBACA,UAAA","file":"../styles.min.css","sourcesContent":["* {\n  box-sizing: border-box; }\n\n.section1 button {\n  font-size: 20px; }\n"]}
