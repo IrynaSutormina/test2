@@ -17,25 +17,18 @@ button {
   }
 }
 
+.text {
+  font-size: 25px;
+  color: red;
+  margin-bottom: 25px;
+}
+.new-text {
+  border: 1px solid pink;
+}
+
 button {
-
-}
-button:hover {
-
-}
-button img {
-
-}
-div {
-  div {
-    div {
-      div {
-        div {
-          div {
-
-          }
-        }
-      }
-    }
-  }
+  padding: 5px 15px;
+  border-radius: 5px;
+  background-color: bisque;
+  
 }
