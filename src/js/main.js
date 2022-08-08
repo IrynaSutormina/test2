@@ -1,11 +1,14 @@
 document.addEventListener('DOMContentLoaded', ()=>{
 
-console.log('start');
+//console.log('start');
 
 let element = document.querySelector('p');
 
+console.log(element.innerHTML);
+element.innerHTML = '<a>Link</a>';
+
 let button = document.querySelector('#button-1');
-console.log(button);
+//console.log(button);
 
 
 element.classList.add('new-class');
@@ -30,8 +33,43 @@ element.style.color = "white";
 button.addEventListener('click', first);
 
 function first () {
-    alert('K.DHFB.KHSDF');
+    //alert('K.DHFB.KHSDF');
 } 
 window.addEventListener('resize', first);
+
+let numbers = document.querySelectorAll('.number');
+let sumButton = document.querySelector('.button-sum');
+//console.log(numbers, sumButton);
+let sum = 0;
+
+sumButton.addEventListener('click', ()=>{
+    strangeSum (numbers);
+});
+//console.log(sum);
+
+function strangeSum (array) {
+    array.forEach((e)=>{        
+        sum = sum + (+e.textContent) ; 
+        //console.log(sum);        
+    })  
+}
+
+let inputField = document.querySelector('.enter-text');
+
+let overlay = document.querySelector('.wrapper');
+
+inputField.addEventListener('input', (event)=>{
+    console.log(event.target.value);
+    let value = event.target.value;
+    setTimeout(()=>{
+        overlay.innerHTML = `<p> ${value} <p/>`;
+        console.log('Timer')
+    }, 5000);
+    console.log('after');
+})
+
+document.addEventListener('click', (event) =>{
+    console.log(event.target);
+})
 
 })
