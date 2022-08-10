@@ -19,10 +19,10 @@ if (element.classList.contains('text')) {
     element.classList.add('text');
 }
 
-let allElement = document.querySelectorAll('p');
-allElement.forEach((e)=>{
-    e.classList.add('forEach');
-})
+//let allElement = document.querySelectorAll('p');
+//allElement.forEach((e)=>{
+//    e.classList.add('forEach');
+//})
 // element.setAttribute("style", "background-color: red;");
 // element.setAttribute("style", "font-size: 10px;");
 
