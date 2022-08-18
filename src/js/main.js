@@ -55,8 +55,19 @@ function strangeSum (array) {
 }
 
 let inputField = document.querySelector('.enter-text');
-
+let inputList = document.querySelectorAll('.enter-text');
 let overlay = document.querySelector('.wrapper');
+
+//inputField.addEventListener('blur', func);
+inputList.forEach((inputListitem)=>{
+    inputListitem.addEventListener('blur', func);
+})
+
+function func() {
+    console.log(this); // содержит ссылку на наш элемент 
+    this.value = '';        
+}
+    
 
 inputField.addEventListener('input', (event)=>{
     console.log(event.target.value);
@@ -68,8 +79,18 @@ inputField.addEventListener('input', (event)=>{
     console.log('after');
 })
 
-document.addEventListener('click', (event) =>{
-    console.log(event.target);
-})
+// document.addEventListener('click', (event) =>{
+//     console.log(event.target);
+// })
+
+
+let section = document.querySelector('.section');
+
+let str = '<div id="id1"><p>1</p><p class="paragraph">2</p><button>click me</button></div> ';
+
+section.insertAdjacentHTML('afterbegin', str);
+
+
 
 })
+
