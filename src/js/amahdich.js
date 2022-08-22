@@ -31,7 +31,8 @@ document.addEventListener('DOMContentLoaded', () => {
         e.addEventListener('click', addFunc);
     })
     function addFunc () {
-        this.addZnak.innerHTML = `${addZnak.before('!')}`;
+        console.log(this);
+        this.insertAdjacentText('beforeend', '!');
     }
   
     const btnLink = document.querySelector('.alex_btn');
