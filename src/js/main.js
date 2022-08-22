@@ -91,6 +91,26 @@ let str = '<div id="id1"><p>1</p><p class="paragraph">2</p><button>click me</but
 section.insertAdjacentHTML('afterbegin', str);
 
 
+const link = document.querySelector('.link');
+let i=0;
+
+function listener (event) {
+    
+    //event.preventDefault();
+    // console.log(this);
+    // this.style.color = 'red';
+    i++;
+    console.log(link, i);
+    if(i>2) {
+        link.removeEventListener('click', listener);
+    }
+  };
+
+  //listener();
+link.addEventListener('click', listener);
+
+let match = sumButton.matches('p');
+console.log(match);
 
 })
 
