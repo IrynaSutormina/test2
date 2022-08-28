@@ -36,3 +36,21 @@ button {
 .bg-red {
   background-color: red;
 }
+
+.events, .events2 {
+  padding: 50px;
+  
+  * {    
+      margin: 10px;
+      border: 1px solid blue; 
+  }
+}
+.div4 {
+  background-color: burlywood;
+}
+.div5 {
+  background-color: blueviolet;
+}
+.div6 {
+  background-color: chartreuse;
+}

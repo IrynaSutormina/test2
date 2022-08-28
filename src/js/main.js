@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', ()=>{
 
-//console.log('start');
+// //console.log('start');
 
 let element = document.querySelector('p');
 
@@ -111,6 +111,22 @@ link.addEventListener('click', listener);
 
 let match = sumButton.matches('p');
 console.log(match);
+
+//events
+let parent = document.querySelector('.events2');
+
+parent.addEventListener('click', function(event){
+    console.log(event.target );
+    console.log(event.currentTarget , this);
+    event.target.style.backgroundColor = 'red';
+    event.currentTarget.style.border = '2px solid red';
+    setTimeout(() => {        
+        event.target.style.backgroundColor = '';
+      }, 500);
+})
+
+
+
 
 })
 
